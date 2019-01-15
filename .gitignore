@@ -1,0 +1,3 @@
+workspace/.databases/data/mongodb/
+node_modules/
+.DS_Store

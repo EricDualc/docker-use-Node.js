@@ -1,0 +1,17 @@
+{
+  "name": "node1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "docker-compose": "^0.9.3"
+  },
+  "dependencies": {
+    "node-docker-api": "^1.1.22"
+  }
+}
