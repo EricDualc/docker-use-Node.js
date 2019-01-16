@@ -8,7 +8,7 @@ docker.container.list()
   .then(function(containers) {
     for (let index = 0; index < containers.length; index++) {
         const element = containers[index];
-        console.log("Docker Image: ", element.data.Image, " State: ", element.data.State);
+        console.log(element.data.Labels["com.docker.compose.service"], element.data.State);
     }
   })
   .catch(error => console.log(error));
