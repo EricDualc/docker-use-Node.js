@@ -2,9 +2,9 @@ const {Docker} = require('node-docker-api');
 
 const docker = new Docker({ socketPath: '/var/run/docker.sock' });
 
-// List
-docker.container.list()
-   // Inspect
+ // List
+docker.container.list({all: true})
+  // Inspect
   .then(function(containers) {
     for (let index = 0; index < containers.length; index++) {
         const element = containers[index];
